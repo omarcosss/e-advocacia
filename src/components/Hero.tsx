@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="flex justify-center items-center h-full">
         <Image
           className="md:scale-130"
-          src={"/advogados-hero.png"}
+          src={"/advogados.webp"}
           width={520}
           height={520}
           alt="Imagem do time de advogados do escritório E Advocacia"
