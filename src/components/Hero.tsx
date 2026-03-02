@@ -19,7 +19,7 @@ export default function Hero() {
             Este site é um projeto fictício desenvolvido exclusivamente para fins de portfólio. As informações apresentadas não representam um escritório real.
           </span>
         </p>
-        <div className="flex gap-6 mt-12">
+        <div className="flex flex-col items-center md:flex-row gap-6 mt-12">
           <SmoothAppear delay={0.1}>
             <Button>
               <ChatBubble width={20} height={20} />
