@@ -19,11 +19,13 @@ export default function Hero() {
             Este site é um projeto fictício desenvolvido exclusivamente para fins de portfólio. As informações apresentadas não representam um escritório real.
           </span>
         </p>
-        <div className="flex flex-col items-center md:flex-row gap-6 mt-12">
+        <div className="flex flex-col items-center md:flex-row gap-6 mt-8 md:mt-12">
           <SmoothAppear delay={0.1}>
-            <Button>
-              <ChatBubble width={20} height={20} />
-              Fale com um advogado
+            <Button asChild>
+              <Link href={"#contato"}>
+                <ChatBubble width={20} height={20} />
+                Fale com um advogado
+              </Link>
             </Button>
           </SmoothAppear>
           <SmoothAppear delay={0.2}>
@@ -36,12 +38,12 @@ export default function Hero() {
           </SmoothAppear>
         </div>
       </div>
-      <div className="flex justify-center items-center h-full">
+      <div className="flex justify-center items-center h-full -mt-2 md:mt-0">
         <Image
-          className="md:scale-130"
+          className="w-full max-w-[300px] h-auto md:max-w-none md:w-[520px] md:scale-130"
           src={"/advogados.webp"}
-          width={520}
-          height={520}
+          width={920}
+          height={920}
           alt="Imagem do time de advogados do escritório E Advocacia"
         />
       </div>
